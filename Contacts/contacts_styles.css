@@ -1,0 +1,106 @@
+body {
+	background: url("contactsImages/rsz_1inukshuk.jpg") center center fixed;
+	background-size: cover;
+}
+
+div.wrapper{
+	min-width:90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+div.background{
+	padding-top:2.5em; 
+	padding-bottom: 2.5em;
+	margin-left: 2.5em; 
+	margin-right: 2.5em;
+	background: white;
+	max-height: 100%;
+	min-height: 80%;
+}
+
+div.content{
+	margin-right: 2.5em;
+	margin-left: 2.5em;
+}
+
+table{
+	margin-left: auto; 
+	margin-right: auto;
+	width: 100%;
+	font-size: 1.25em;
+	max-height: 100%;
+}
+
+table,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table#TitleTable{
+	max-height: 100%;
+	max-width: 100%;
+}
+
+td{
+	padding: 5px;
+    text-align: center;    
+}
+
+tr#labels{
+	font-weight: bold;
+	font-size: 1em;
+}
+
+img#home, img#add, input#trash{
+	margin-top: 5px;
+	min-height: 30px;
+	max-height: 30px;
+	vertical-align: bottom;	
+}
+
+img#home{
+	margin-right: 60px;
+}
+
+img#add{
+	margin-right: 10px;
+}
+
+input#searchBtn{
+	max-width: 2em;
+	max-height: 1.5em;
+	float: right;
+}
+
+select{
+	border: none;
+	font-size: 1.2em;
+	color: rgb(140,111,65);
+	height: 24px;
+}
+
+div#searchDiv{
+	max-height: 25px;
+	max-width: 310px;
+	float: right;
+	border : 2px solid rgb(140,111,65);
+  	padding : 5px;
+  	vertical-align: middle;
+  	display: inline-block;
+  	margin-bottom: 10px;
+}
+
+input#search{
+	max-width: 70%;
+	height: 24px;
+	padding-top: 0.15em;
+	padding-bottom: 0.25em;
+	float: left;
+	font-size: 1.2em;
+	color: rgb(140,111,65);
+	border: none;
+}
+
+a#edit{
+	color: black;
+}
