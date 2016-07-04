@@ -1,0 +1,18 @@
+body 				{margin: 0; padding: 0; overflow-y: hidden; background: url(CNO_bg.png) no-repeat center center fixed; 
+					-webkit-background-size: cover;
+					-moz-background-size: cover;
+					-o-background-size: cover;
+					background-size: cover; height: 100%; width: 100%; z-index: 0; padding-top: 3em; min-width: 1000px; width: auto !important;}
+
+div#top_header		{background: rgba(23, 23, 23, 0.8); margin-top: -1.5em; font-family: "Oswald", sans-serif; min-height: 8.5em; max-height: 8.5em;}
+
+img#logo			{margin-bottom: 1em; margin-left: 5em; margin-top: 0.5em; max-height: 110px; background-color: none;}
+   	
+section#login_input	{float: right; margin-right: 10em; margin-top: 3em;}   				 
+
+td#login_button		{text-align: right;}
+
+td 					{padding-right: 1em;}
+
+table#login_table	{color: white;}		
+	 			 
