@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Canada North Outfitting - Home</title>
+
+		<link rel="stylesheet" type="text/css" href="header_styles.css">
+		<link rel="stylesheet" type="text/css" href="home_styles.css">
+		<link rel="stylesheet" type="text/css" href="notif_styles.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script type="text/javascript" src="home_functions.js"></script>
+
+		<script type="text/javascript">
+			function showDateTime() 
+			{
+				// Handle the date and time
+				document.getElementById("date_para").textContent = showDate();
+				document.getElementById("time_para").textContent = showTime();			
+			}		
+
+			function displayClientPage()
+			{
+				window.location = "../Contacts/contacts.php";
+			}
+
+			// Notifications methods
+			function notifications() {
+				document.getElementById("notifs-pane").classList.toggle("show");
+			}
+			
+			function notificationsEmpty() {
+				document.getElementById("notifs-pane-empty").classList.toggle("show");
+			}
+
+			window.onclick = function(e) {
+				if (!e.target.matches('.notifications')) {
+
+					var dropdowns = document.getElementsByClassName("notifications-content");
+					for (var d = 0; d < dropdowns.length; d++) {
+						var openDropdown = dropdowns[d];
+						if (openDropdown.classList.contains('show')) {
+							openDropdown.classList.remove('show');
+						}
+					}
+				}
+			}
+		</script>
+	</head>
+
+	<body onload="setInterval('showDateTime()', 500)">
+		<header>
+			<img src="logo_horizontal.png" alt="CNO Logo" id="logo"/>	
+			<div id="date_time">
+				<div id="timeDiv">
+					<p id="time_para"></p>
+				</div>
+				
+				<div id="dateDiv">
+					<p id="date_para"></p>
+				</div>				
+			</div>
+			
+			<form action="../List Page/list.php" method="POST" id="searchForm">
+				<input type="submit" value="Search" id="searchButton"/>
+				<input type="button" value="Sign Out" id="signout_button" onClick="logOut()"/> 
+				<input type="hidden" name="selected" id="selected"/>
+			</form>
+
+			<div id="notificationIcon">
+				<ul>
+					<li><a href="javascript:void(0)" class="notifications" onclick="notifications()">Notifications</a></li>
+				</ul>
+					<div class="notifications-content" id="notifs-pane">
+				 	 <div>Notification 1</div>
+				 	 <div>Notification 2</div>
+				 	 <div>Notification 3</div>
+					</div>
+			</div>
+		</header>
+
+		<div class="wrapper">
+
+			<div id="line"></div>
+
+			<div id="clients" class="cat_buttons">
+				<p id="cat_title_clients" class="subtitle"><b>Clients</b></p>
+				<img src="buttons/shrink.png" id="expandButton_clients" class="expandButton"/>				
+				<div id="inner_content_clients" class="inner_content">
+					<img src="buttons/clients/all_button.png" class="content_button" id="all_button" onClick="displayClientPage()"/>
+					<img src="buttons/clients/hunters_button.png" class="content_button" id="hunters_button" onClick="btnClick('clients', 'hunters_button')"/>
+					<img src="buttons/clients/observers_button.png" class="content_button" id="observers_button" onClick="btnClick('clients', 'observers_button')"/>										
+				</div>									
+			</div>
+
+			<div id="species" class="cat_buttons">
+				<p id="cat_title_species" class="subtitle"><b>Species</b></p>
+				<img src="buttons/shrink.png" id="expandButton_species" class="expandButton"/>				
+				<div id="inner_content_species" class="inner_content">
+					<img src="buttons/species/polarBear_button.png" class="content_button" id="polarBear_button" onClick="btnClick('species', 'polarBear_button')"/>
+					<img src="buttons/species/muskox_button.png" class="content_button" id="muskox_button" onClick="btnClick('species', 'muskox_button')"/>
+					<img src="buttons/species/walrus_button.png" class="content_button" id="walrus_button" onClick="btnClick('species', 'walrus_button')"/>
+					<img src="buttons/species/centralCaribou_button.png" class="content_button" id="centralCaribou_button" onClick="btnClick('species', 'centralCaribou_button')"/>
+					<img src="buttons/species/arcticCaribou_button.png" class="content_button" id="arcticCaribou_button" onClick="btnClick('species', 'arcticCaribou_button')"/>
+					<img src="buttons/species/grizzlyBear_button.png" class="content_button" id="grizzlyBear_button" onClick="btnClick('species', 'grizzlyBear_button')"/>	
+					<img src="buttons/species/wolf_button.png" class="content_button" id="wolf_button" onClick="btnClick('species', 'wolf_button')"/>		
+					<img src="buttons/species/goose_button.png" class="content_button" id="goose_button" onClick="btnClick('species', 'goose_button')"/>										
+				</div>									
+			</div>
+
+			<div id="seasons" class="cat_buttons">
+				<p id="cat_title_seasons" class="subtitle"><b>Seasons</b></p>	
+				<img src="buttons/shrink.png" id="expandButton_seasons" class="expandButton"/>			
+				<div id="inner_content_seasons" class="inner_content">
+					<img src="buttons/seasons/spring_button.png" class="content_button" id="spring_button" onClick="btnClick('seasons', 'spring_button')"/>
+					<img src="buttons/seasons/summer_button.png" class="content_button" id="summer_button" onClick="btnClick('seasons', 'summer_button')"/>
+					<img src="buttons/seasons/fall_button.png" class="content_button" id="fall_button" onClick="btnClick('seasons', 'fall_button')"/>		
+				</div>				
+			</div>
+
+			<div id="location" class="cat_buttons">
+				<p id="cat_title_location" class="subtitle"><b>Location</b></p>
+				<img src="buttons/shrink.png" id="expandButton_location" class="expandButton"/>			
+				<div id="inner_content_location" class="inner_content">
+					<img src="buttons/locations/arcticBay_button.png" class="content_button" id="arcticBay_button" onClick="btnClick('locations', 'arcticBay_button')"/>
+					<img src="buttons/locations/cambridgeBay_button.png" class="content_button" id="cambridgeBay_button" onClick="btnClick('locations', 'cambridgeBay_button')"/>
+					<img src="buttons/locations/coralHarbour_button.png" class="content_button" id="coralHarbour_button" onClick="btnClick('locations', 'coralHarbour_button')"/>
+					<img src="buttons/locations/hallBeach_button.png" class="content_button" id="hallBeach_button" onClick="btnClick('locations', 'hallBeach_button')"/>	
+					<img src="buttons/locations/igloolik_button.png" class="content_button" id="igloolik_button" onClick="btnClick('locations', 'igloolik_button')"/>
+					<img src="buttons/locations/kimmirut_button.png" class="content_button" id="kimmirut_button" onClick="btnClick('locations', 'kimmirut_button')"/>
+					<img src="buttons/locations/pondInlet_button.png" class="content_button" id="pondInlet_button" onClick="btnClick('locations', 'pondInlet_button')"/>
+					<img src="buttons/locations/resolute_button.png" class="content_button" id="resolute_button" onClick="btnClick('locations', 'resolute_button')"/>																											
+					<img src="buttons/locations/umingmaktok_button.png" class="content_button" id="umingmaktok_button" onClick="btnClick('locations', 'umingmaktok_button')"/>
+					
+					
+				</div>				
+			</div>
+
+			<div id="other" class="cat_buttons">
+				<p id="cat_title_other" class="subtitle"><b>Other</b></p>	
+				<img src="buttons/shrink.png" id="expandButton_other" class="expandButton"/>			
+				<div id="inner_content_other" class="inner_content">
+					<img src="buttons/other/co_button.png" class="content_button" id="co_button" onClick=""/>
+					<img src="buttons/other/johnS_button.png" class="content_button" id="johnS_button" onClick=""/>
+					<img src="buttons/other/shaneB_button.png" class="content_button" id="shaneB_button" onClick=""/>	
+					<img src="buttons/other/clothes_button.png" class="content_button" id="clothes_button" onClick="btnClick('other', 'clothes_button')"/>			
+					<img src="buttons/other/rifleRentals_button.png" class="content_button" id="rifleRentals_button" onClick="btnClick('other', 'rifleRentals_button')"/>
+				</div>				
+			</div>		
+
+		</div>
+	</body>
+</html>
