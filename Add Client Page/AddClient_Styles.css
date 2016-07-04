@@ -1,0 +1,130 @@
+
+*{	
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+	overflow-x: hidden; 
+}
+
+body{
+	color: black;
+	background-image: url(Arctic_Scenery.jpg);
+	background-color: white;
+	background-repeat:no-repeat;
+    background-position: center top;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: auto; 
+}
+
+header {
+	background-color: rgb(23, 23, 23);
+	opacity: 1;
+}
+
+header img {
+	margin-left: 310px;
+}
+
+.InfoButtons {	
+	text-align: center;
+	min-width: 70%; 
+	max-width: 70%; 
+	margin-left: 17%;
+	margin-right: 50%;
+}
+
+.InfoButtons .HotelInfo, .FlightInfo, .ContactInfo {
+	background-color: rgb(116, 86, 52);
+	color: rgb(209, 182, 135);
+	font-size: 23px;
+	line-height: 50px;
+	width: 25%;
+	display: block;
+	text-decoration: none;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	float: left;
+}
+
+.InfoButtons a:hover {
+	background-color: rgb(90, 60, 26);
+	color: rgb(209, 182, 135);
+}
+
+.FlightInfo {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+form {
+	margin-left: 13%;
+}
+.form {
+	float: left;
+	display: block;
+	top: 50%;
+    margin-bottom: 1em;
+}
+
+.inner_content, .rentals, .notes, .huntPackages {
+	border: 1px solid black;
+	border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.rentals, .notes, .huntPackages {
+	float: left;
+	display: block;
+	margin-left: 10%;
+}
+
+input[type="submit"], input[type="reset"] {
+	width: 30%;	
+	margin-bottom: 1em;
+}
+
+#hotelButtons input[type="submit"],#hotelButtons input[type="reset"] {
+	width: 15%;	
+	margin-bottom: 1em;
+}
+
+#flightButtons input[type="submit"],#flightButtons input[type="reset"] {
+	width: 13%;	
+	margin-bottom: 1em;
+}
+
+#subtitle {
+	font-size: 12px;
+}
+
+.wrapper {
+	clear: both;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(116, 86, 52, 0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(116, 86, 52, 0.4); 
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Canada North Outfitting - Add Client</title>
+		<link rel="stylesheet" type="text/css" href="header_styles.css">
+		<link rel="stylesheet" type="text/css" href="AddClient_Styles.css">
+	</head>
+
+	<body>
+		<header>
+			<a href="home.html"><img src="logo_horizontal.png" alt="Logo (polar bear...)" id="logo"/></a>			
+			<input type="button" value="Sign Out" id="signout_button"/> 
+		</header>
+
+		<div class="wrapper">
+            
+			<div class="InfoButtons">
+				<a href="AddClient.html" class="ContactInfo" >CONTACT</a>
+				<a class="FlightInfo" id="currentPage">FLIGHT</a>
+				<a href="HotelInfo.html" class="HotelInfo">HOTEL</a>
+			</div>
+			<form action="flightTest.php" method="post">
+			<div class="form">
+				<div class="inner_content">
+					<h2><u>Flight Information</u></h2>
+					
+	                    Passport Number:<br>
+	                    <input type="text" name="passportNum" required><br>
+						
+						<table>
+						<td><h3><u>Gateway City</u></h3>
+	                    Airline:<br>
+	                    <input type="text" name="GAirline" required><br>
+
+	                    Flight Number:<br>
+	                    <input type="text" name="GFlightNum" required><br>
+	                    
+	                    Confirmation Code:<br>
+	                    <input type="text" name="GConfirmationNum" required><br>
+	                    <br>
+
+	  					Arrival Date/Time:<br>
+                        <input type="datetime-local" name="GArrival" required><br>	
+                        
+                        Departure Date/Time:<br>
+                        <input type="datetime-local" name="GDeparture" required><br>		
+                    	</td>
+                        <br>
+                        <td width="40%">
+	                    <h3><u>Arctic Community</u></h3>
+	                    Airline:<br>
+	                    <input type="text" name="AAirline" required><br>
+
+	                    Flight Number:<br>
+	                    <input type="text" name="AFlightNum" required><br>
+	                    
+	                    Confirmation Code:<br>
+	                    <input type="text" name="AConfirmationNum" required><br>
+	                    <br>
+
+	  					Arrival Date/Time:<br>
+                        <input type="datetime-local" name="AArrival" required><br>	
+                        
+                        Departure Date/Time:<br>
+                        <input type="datetime-local" name="ADeparture" required><br>	
+						</td>
+                        </table>
+				</div>
+	  				<div id="flightButtons">
+	  					<input type="submit" value="Save"> <input type="reset" value="Reset">
+	  				</div>
+			</div> <!-- End form -->
+           </form>
+		</div>
+	</body>
+</html>

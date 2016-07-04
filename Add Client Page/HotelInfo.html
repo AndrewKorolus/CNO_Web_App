@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Canada North Outfitting - Add Client</title>
+		<link rel="stylesheet" type="text/css" href="header_styles.css">
+		<link rel="stylesheet" type="text/css" href="AddClient_Styles.css">
+	</head>
+
+	<body>
+		<header>
+			<a href="home.html"><img src="logo_horizontal.png" alt="Logo (polar bear...)" id="logo"/></a>			
+			<input type="button" value="Sign Out" id="signout_button"/> 
+		</header>
+
+		<div class="wrapper">
+            
+			<div class="InfoButtons">
+				<a href="AddClient.html" class="ContactInfo" >CONTACT</a>
+				<a href="FlightInfo.html" class="FlightInfo">FLIGHT</a>
+				<a id="currentPage" class="HotelInfo">HOTEL</a>
+			</div>
+		<form action="hotelTest.php" method="post">
+			<div class="form">
+				<div class="inner_content">
+					<h2><u>Hotel Information</u></h2>
+					<table>
+						<td ><h3><u>Gateway City</u></h3>
+	                    Hotel Name:<br>
+	                    <input type="text" name="GHotel"><br>
+						
+	                    Room Number:<br>
+	                    <input type="text" name="GRoomNum"><br>
+	                    
+	                    Reservation Number:<br>
+	                    <input type="text" name="GReservationNum"><br>
+	                	</td>
+	                    <td width="40%">
+	                    <h3><u>Arctic Community</u></h3>
+	                    Hotel Name:<br>
+	                    <input type="text" name="AHotel"><br>
+						
+	                    Room Number:<br>
+	                    <input type="text" name="ARoomNum"><br>
+	                    
+	                    Reservation Number:<br>
+	                    <input type="text" name="AReservationNum"><br>
+	                    </td>
+	                    </table> 					
+					
+				</div>
+				<div id="hotelButtons">
+	  					<input type="submit" value="Save"> <input type="reset" value="Reset">
+	  			</div>
+	  		</div>
+           </form> <!-- End form -->
+		</div>
+	</body>
+</html>
