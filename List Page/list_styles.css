@@ -1,0 +1,96 @@
+body {
+	background: url("contactsImages/Inukshuk.jpg") center center fixed;
+	background-size: cover;
+	font-family: "Oswald", sans-serif;
+}
+div.wrapper{
+	min-width:90%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 2em;
+	height: auto;
+}
+
+div.background{
+	margin-left: 2.5em; 
+	margin-right: 2.5em;
+	background: white;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+}
+
+div.content{
+	margin-right: 2.5em;
+	margin-left: 2.5em;
+}
+
+table{
+	margin-left: auto; 
+	margin-right: auto;
+	width: 100%;
+	font-size: 1.25em;
+	max-height: 100%;
+}
+
+table,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td{
+	padding: 5px;
+    text-align: center;    
+}
+
+tr#labels{
+	font-weight: bold;
+	font-size: 1em;
+}
+
+img#home{
+	margin-top: 5px;
+	min-height: 30px;
+	max-height: 30px;
+	vertical-align: bottom;
+	margin-right: 60px;	
+	margin-bottom: 1em;
+}
+
+img#home:hover {
+	cursor: pointer;
+}
+
+
+img#search{
+	max-width: 2em;
+	max-height: 1.5em;
+	float: right;
+}
+
+select{
+	border: none;
+	font-size: 1.2em;
+	color: rgb(140,111,65);
+	height: 24px;
+}
+
+form#searchForm{
+	max-height: 25px;
+	max-width: 310px;
+	float: right;
+	border : 2px solid rgb(140,111,65);
+  	padding : 5px;
+  	vertical-align: middle;
+  	display: inline-block;
+}
+
+input#search{
+	max-width: 70%;
+	height: 24px;
+	padding-top: 0.15em;
+	padding-bottom: 0.25em;
+	float: left;
+	font-size: 1.2em;
+	color: rgb(140,111,65);
+	border: none;
+}
