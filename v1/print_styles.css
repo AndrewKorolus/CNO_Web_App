@@ -1,0 +1,25 @@
+th, td {width: 8em;}
+
+tr:hover {background-color: #CFCFCF;}
+th:hover, td:hover {background-color: #A8A8A8;}
+
+.col1 {padding-right: 2em;}
+
+.col2 {text-align: left;}
+
+.col7 {width: 4em;}
+
+.col8 {width: 6em;}
+
+.col9 {width: 24em; text-align: left;}
+
+table {text-align: center; margin-top: 8.5em; margin-left: 12.5%; width: 75%;}
+
+.needsBorder {border: .1em black solid;}
+
+div.wrapper {
+	background: white;
+	width: 75%;
+	max-width: 75%;
+	left: 12.5%;
+}

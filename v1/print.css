@@ -1,0 +1,21 @@
+@media print {
+	header {display: none; margin: 0,0,0,0;}
+	
+	table {width: 100%; margin-top: 1em; margin-left: 1em;}
+	
+	/*div.wrapper {margin-top: 1em; left: 1em; max-width: 100%; width 100%;}*/
+	
+	th, td {font-size: 1em; width: 20cm;}
+	
+	.col1 {width: 60cm}
+
+	.col2 {width: 120cm; text-align: left;}
+
+	.col7 {width: 10cm;}
+
+	.col8 {width: 15cm;}
+
+	.col9 {width: 200cm; text-align: left;}
+	
+	@page {size: landscape; margin: 0;}
+}
